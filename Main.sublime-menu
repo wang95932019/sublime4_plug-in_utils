@@ -1,0 +1,17 @@
+[
+	{
+		"id": "utils",
+		"caption": "Utils",
+		"children": [
+			{"caption": "formdata转json", "command": "form_data_to_json"},
+			{
+				"caption": "生成随机code", 
+				"children":[
+					{"caption": "统一社会信用代码", "command": "create_social_credit"},
+					{"caption": "身份证号", "command": "generate_random_id"},
+					{"caption": "手机号", "command": "generate_phone_number"}
+				]
+			},
+		]
+	}
+]
