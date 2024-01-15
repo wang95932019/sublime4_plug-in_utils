@@ -12,6 +12,7 @@
 					{"caption": "手机号", "command": "generate_phone_number"}
 				]
 			},
+			{"caption": "生成API结构", "command": "generate_api_structure"},
 		]
 	}
 ]

@@ -2,10 +2,12 @@ import sublime
 import sublime_plugin
 import json
 import random
+import urllib.parse
 
 
 class FormDataToJsonCommand(sublime_plugin.TextCommand):
 	""" 将从浏览器中复制的formdata数据转为json格式 """
+
 	def run(self, edit):
 		view = self.view
 		# 遍历所有拼接为字符串
@@ -13,15 +15,25 @@ class FormDataToJsonCommand(sublime_plugin.TextCommand):
 		formdata_list = formdata_str.split("&")
 		formdata_dict = {}
 		for formdata in formdata_list:
-			print(formdata.split("="))
-			key, value = formdata.split("=")
+			try:
+				key, value = formdata.split("=")
+			except ValueError:
+				key = formdata.split("=")
+				value = ""
+
+			# unicode解码，如："%E4%BD%A0%E5%A5%BD" 转为 "你好"
+			key = urllib.parse.unquote(key)
+			value = urllib.parse.unquote(value)
 			formdata_dict[key] = value
 
+		# 将 Python 对象转换为 JSON 格式的字符串，并进行格式化
+		formatted_json = json.dumps(formdata_dict, indent="\t", ensure_ascii=False)
 
+		# 输出结果
 		insert_point = view.sel()[0].end()  # 获取第一个选区的结束位置
-
+		view.insert(edit, insert_point, "\n")		# 先写入换行，否则如果是最后view的最后一行不会有写入
 		line_after_sel = view.line(insert_point).end() + 1  # 获取选区之后一行的位置
-		view.insert(edit, line_after_sel, json.dumps(formdata_dict))
+		view.insert(edit, line_after_sel, formatted_json)
 
 
 class CreateSocialCreditCommand(sublime_plugin.TextCommand):
@@ -171,3 +183,117 @@ class GeneratePhoneNumber(sublime_plugin.TextCommand):
 
 		# 拼接手机号
 		return "1{}{}{}".format(second, third, suffix)
+
+
+class GenerateApiStructure(sublime_plugin.TextCommand):
+	""" 生成API结构 """
+
+	def run(self, edit):
+		view = self.view
+
+		# 获取所选中的第一个区域
+		view_first_region = view.substr(view.sel()[0])
+
+		# 处理选中的数据
+		view_str_list = view_first_region.split("\n")
+		api_name = view_str_list[0]
+		parsers_list = list(map(lambda view_str: view_str.strip(), view_str_list[1:]))
+		result = self.generate_api_structure(api_name, parsers_list)
+
+		# 获取最后一行的结束位置
+		insert_points = [region.end() for region in view.sel()]
+		for insert_point in  insert_points:
+			last_line_end = view.line(insert_point).end() + 2  # 获取选区之后一行的位置
+
+			# 插入结果到最后一行的下一行
+			view.insert(edit, last_line_end, result)
+			break
+
+
+
+	def generate_api_structure(self, api_name:str, parsers_list:list):
+		"""
+		生成api结构
+		:param api_name: API名称
+		:param params_list: 参数列表
+		:return:
+		"""
+
+		# 模块字典
+		module_dict = {
+			"views_resource_module": "路由地址模块",
+			"parsers_module": "参数模块",
+			"resource_module": "资源类模块",
+			"res_module": "功能方法模块",
+		}
+
+		# 下划线转驼峰命名
+		api_name_camel = self.underscoreToCamel(api_name)
+
+		# 前缀字符串
+		prefix_str = "================ %s =====================\n"
+
+
+		# 路由地址
+		views_resource_str = prefix_str%module_dict["views_resource_module"] + f"""[{module_dict["resource_module"]}.{api_name_camel}, "/{api_name}", "{api_name}"],"""
+
+		# 参数列表
+		parsers_str_list = [f"""{api_name} = reqparse.RequestParser(trim=True)"""]
+		for parsers in parsers_list:
+			parsers_str_list.append(f"""{api_name}.add_argument("{parsers}", type=str, required=True, default="")""")
+		parsers_str = prefix_str%module_dict["parsers_module"] + "\n".join(parsers_str_list)
+
+		# 资源类
+		resource_str_list = [
+								f"""class {api_name_camel}(Resource):""",
+								f"""\tdef post(self):""",
+								f"""\t\tconn = get_conn()""",
+        						f"""\t\tdata = {module_dict["views_resource_module"]}.{api_name}.parse_args()""",
+							]
+		for parsers in parsers_list:
+			resource_str_list.append(f"""\t\t{parsers} = data["{parsers}"]""")
+		resource_str_list.append(f"""\t\ttry:""")
+		resource_str_list.append(f"""\t\t\tflag, res_data = {module_dict["res_module"]}.{api_name}(""")
+		resource_str_list.append(f"""\t\t\t\t{', '.join(parsers_list)}""")
+		resource_str_list.append(f"""\t\t\t)""")
+		resource_str_list.append(f"""\t\t\tif flag:""")
+		resource_str_list.append(f"""\t\t\t\treturn return_0(res_data)""")
+		resource_str_list.append(f"""\t\t\telse:""")
+		resource_str_list.append(f"""\t\t\t\treturn return_1(res_data)""")
+		resource_str_list.append(f"""\t\texcept:""")
+		resource_str_list.append(f"""\t\t\tlogger.exception("代码执行异常>>>")""")
+		resource_str_list.append(f"""\t\t\treturn return_99("网络错误，请稍后重试")""")
+
+		resource_str = prefix_str%module_dict["resource_module"] + "\n".join(resource_str_list)
+
+
+		# 功能方法
+		res_str_list = [
+							f"""def {api_name}({', '.join(parsers_list)}):""",
+							f"""\traise NotImplementedError"""
+						]
+
+		res_str = prefix_str%module_dict["res_module"] + "\n".join(res_str_list)
+
+		result = views_resource_str + "\n"*2 + parsers_str + "\n"*2 + resource_str + "\n"*2 + res_str
+		return result
+
+
+	def underscoreToCamel(self, underscore_str, is_initial_case:bool=True):
+		""" 
+		下划线转驼峰命名 
+		:param underscore_str: 字符串
+		:param is_initial_case: 首字母是否大写
+		"""
+
+		# 将下划线分隔的单词转换为列表
+		words = underscore_str.split('_')
+
+		# 将每个单词的首字母大写，并拼接成一个字符串
+		camel_str = ''.join([word.capitalize() for word in words])
+
+		# 将第一个单词的首字母小写
+		if not is_initial_case:
+			camel_str = camel_str[0].lower() + camel_str[1:] 
+
+		return camel_str
