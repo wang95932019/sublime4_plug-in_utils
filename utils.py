@@ -31,7 +31,7 @@ class FormDataToJsonCommand(sublime_plugin.TextCommand):
 
 		# 输出结果
 		insert_point = view.sel()[0].end()  # 获取第一个选区的结束位置
-		view.insert(edit, insert_point, "\n")		# 先写入换行，否则如果是最后view的最后一行不会有写入
+		view.insert(edit, insert_point, "\n")       # 先写入换行，否则如果是最后view的最后一行不会有写入
 		line_after_sel = view.line(insert_point).end() + 1  # 获取选区之后一行的位置
 		view.insert(edit, line_after_sel, formatted_json)
 
@@ -248,7 +248,7 @@ class GenerateApiStructure(sublime_plugin.TextCommand):
 								f"""class {api_name_camel}(Resource):""",
 								f"""\tdef post(self):""",
 								f"""\t\tconn = get_conn()""",
-        						f"""\t\tdata = {module_dict["views_resource_module"]}.{api_name}.parse_args()""",
+								f"""\t\tdata = {module_dict["views_resource_module"]}.{api_name}.parse_args()""",
 							]
 		for parsers in parsers_list:
 			resource_str_list.append(f"""\t\t{parsers} = data["{parsers}"]""")
@@ -297,3 +297,9 @@ class GenerateApiStructure(sublime_plugin.TextCommand):
 			camel_str = camel_str[0].lower() + camel_str[1:] 
 
 		return camel_str
+
+
+class ShowPathsCommand(sublime_plugin.WindowCommand):
+	""" 输出选中的文件的路径 """
+	def run(self, paths):
+		print(paths)
