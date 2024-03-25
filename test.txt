@@ -13,3 +13,549 @@ orgName=&orgCode=&standardName=&standardCode=&level1Sel=&level2Sel=&level3Sel=&s
 	"standardStatus": "0",
 	"currentPage": "1"
 }
+
+sign=FEA9521F943ECF90CB236694866675DC&source=&ly=&bzh=&zt=0&sfsl=0&czr=&czkssj=&czjssj=&kssj=&jssj=&page=1&limit=20&user_id=006aac226b8d4a8f90fd16c30998c662&user_type=09&api=gbtitle_gl&c_s=pc&random=1706002363253&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNjAwMTk2MywiZXhwIjoxNzA2MDA5MTYzfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.k3WqWvFOgc063f_4FT1dRQDW18i2J8iadxHGfYe_KwIfw6vB_h9qnAzFD1E8Yq1IPY_IJmkEWdHCb-DCQqaRug&time_str=1706002363
+{
+	"sign": "FEA9521F943ECF90CB236694866675DC",
+	"source": "",
+	"ly": "",
+	"bzh": "",
+	"zt": "0",
+	"sfsl": "0",
+	"czr": "",
+	"czkssj": "",
+	"czjssj": "",
+	"kssj": "",
+	"jssj": "",
+	"page": "1",
+	"limit": "20",
+	"user_id": "006aac226b8d4a8f90fd16c30998c662",
+	"user_type": "09",
+	"api": "gbtitle_gl",
+	"c_s": "pc",
+	"random": "1706002363253",
+	"token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNjAwMTk2MywiZXhwIjoxNzA2MDA5MTYzfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.k3WqWvFOgc063f_4FT1dRQDW18i2J8iadxHGfYe_KwIfw6vB_h9qnAzFD1E8Yq1IPY_IJmkEWdHCb-DCQqaRug",
+	"time_str": "1706002363"
+}
+
+
+BELST
+AENOR
+DIN EN ISO
+DIN EN
+DIN EN IEC
+DIN ISO
+ASTM
+DIN ISO/IEC TS
+DIN EN ISO/CIE
+DIN SAE
+DIN ISO
+DIN IEC
+DIN ETS
+DIN EN ISP
+DIN IEC CMC
+AFNOR
+
+可以打开：20240120185244_1.pdfAc7a$1b-97b8
+
+不能打开：Q-91510681214285398E·90-2023_1.p
+
+2024-01-04 处理完成
+
+
+发现重复数据的网站源是”工信部标准公告“，从这个问题出发查验其它网站源发现其它部分网站源存在此类情况
+现统计出现重复数据的网站源如下：
+db45_bzgg
+DB51
+mct_gov
+miit
+nhc_gov_1
+nra_gov
+nrsis_org
+scjjs
+
+
+# 未开始
+
+重复数据
+1. 有去重的中间件，爬虫是可以去重的
+2. 旧的：01-25号下午4点 2024-01-25 16:00:00，新的：01-29号插入的凌晨3点
+3. 查看一下01-29号的日志  gb_121_tybz_gov gb_179_samr_bzjss gb_155_db51
+
+国际国外标准自动清洗入库
+1. 多长时间一次
+2. 是全量的数据还是新爬取的数据
+	2.1 如何标记是新爬取的数据。按时间或者新建字段
+
+国际国外标准入库处理已有的标准(判断依据a100, a102)
+
+# 进行中
+企标自动化
+tc数据爬取
+
+
+一、工作概述
+2023年6月12日入职公司，现在是公司研发二部的一名后端开发，主要的工作如下：
+	1. 负责公司后端开发工作，包括数据库设计、API接口开发等方面。
+	2. 协同团队进行需求分析，完成项目进度的安排和开发任务的分配。
+	3. 与前端开发团队紧密合作，完成前后端联调，保证项目按时上线。
+	4. 团标制修订等平台日常的维护。
+
+二、工作成果
+
+2.1 参与的项目
+2023年我先后参与了国家标准创新型企业、国家企业标准"领跑者"、团标制修订（领跑者、技术经济学会、中机维协、中国节能协会）、飞检无忧、TC207、标准信息维护平台的后端开发。其中主要参与的为：国家企业标准"领跑者"、团标制修订、TC207、标准信息维护平台。
+
+2.2 主要开发的功能
+1. 国家企业标准"领跑者"-创新指标配置。评估机构端创新指标的查询与配置。
+
+2. 国家企业标准"领跑者"-评估方案在线申报。在线申报的数据库与接口设计、在线申报代码开发。
+
+3. 团标制修订-参照中国经济技术协会团标制修订部署中国节能协会团标制修订、绿色采购标准平台。
+
+4. 飞检无忧-车辆检测数据库设计、车辆检测的车辆档案模块。
+
+5. TC207-平台的联调与开发。
+
+6. 领跑者团标制修订-修改标准同步标准无忧平台。
+
+7. 标准信息维护平台-企业标准、TC委员会、国外标准等数据的采集与处理。
+
+
+三、 经验与收获
+1. 技术能力提升：我通过不断学习和实践，提高了自己的技术能力，特别是对后端框架使用更加熟练。同时，我也加深了对数据库设计和性能优化技术的理解。
+2. 团队合作能力提高：我学会了如何更好地与团队成员合作，共同完成任务。我明白了在团队中，有效的沟通和协作至关重要。
+3. 产品意识增强：通过与产品经理、UI设计师等团队的紧密合作，我更加了解产品的设计和用户体验的重要性，提高了自己的产品意识。
+
+四、 不足与反思
+1. 技术深度和广度：在未来的工作中，我将更加注重技术的深入学习和应用，提高自己的技术水平和解决问题的能力。
+2. 响应能力和抗压能力：提高自己在面对紧急任务或突发事件时的响应能力和抗压能力，迅速调整状态，积极解决问题，保证项目进度。
+
+五、 计划与展望
+1. 技术深入学习：继续深入学习后端技术和相关算法，保持技术的领先性。同时，我也会关注行业最新的技术动态和发趋势。
+2. 产品优化：积极参与产品的设计和开发工作，以提高产品的质量和用户体验。与产品经理、UI设计师等团队紧密合作，共同推动产品的发展和优化。
+
+
+'sign': '694ED4AF153B5EBED96035F593B4D9ED', 
+'user_id': 'ed17b1134e864386a569fa078d32f105', 
+'user_type': '09', 
+'api': 'gbtitle_gl', 
+'is_nest': '', 
+'token': 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNzA5OTY0MSwiZXhwIjoxNzA3MTA2ODQxfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiJlZDE3YjExMzRlODY0Mzg2YTU2OWZhMDc4ZDMyZjEwNSJ9.3Q4OOiQq-ShJnaN8iwhVup8wOqr6AU6XBbjRadXfkH0BXLq-PI7tp0fAdKnNWh7a-Io2sNVtZKUHCZbmP0zpng', 'time_str': '1707099677795', 
+'random': '1707099677795', 
+'gjz': '', 'bzbh': '', 'bzxh': '', 'zwmc': '', 'enmc': '', 'bzzz': '', 'xz_bz': '', 'in_xzqd': '0,1', 'bzzt': '未生效,现行,废止', 'zbfl': '', 'icsfl': '', 'dw_gk': '', 'dw_qc': '', 'ry_qc': '', 'select': '', 'wxlx': '', 'bzsx': '', 'fbrq_ksrq': '', 'fbrq_jsrq': '', 'ssrq_ksrq': '', 'ssrq_jsrq': '', 'fzrq_ksrq': '', 'fzrq_jsrq': '', 'btn_id': 'service_standard_manage_search', 'cddm': 'service_standard_manage_search', 'c_s': 'pc', 'istable': '1'
+
+
+
+{'sign': '2BAA0F635E820D4FF80AFD5A86177E51', 'user_id': 'ed17b1134e864386a569fa078d32f105', 'user_type': '09', 'api': 'gbtitle_gl', 'is_nest': '', 'token': 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNzEwMDMxMiwiZXhwIjoxNzA3MTA3NTEyfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiJlZDE3YjExMzRlODY0Mzg2YTU2OWZhMDc4ZDMyZjEwNSJ9.Vq9qGV8SjNu85AJRPqLmncMPWsa2MnK5G_cI9AdglWZe3fh6Q9sALJ0DliQq2JSIjdhKsJtpQkS9hMvMOOdZgg', 'time_str': '1707100322', 'random': '1707100322309', 'gjz': '', 'bzbh': '', 'bzxh': '', 'zwmc': '', 'enmc': '', 'bzzz': '', 'xz_bz': '', 'in_xzqd': '0,1', 'bzzt': '未生效,现行,废止', 'zbfl': '', 'icsfl': '', 'dw_gk': '', 'dw_qc': '', 'ry_qc': '', 'select': '', 'wxlx': '', 'bzsx': '', 'fbrq_ksrq': '', 'fbrq_jsrq': '', 'ssrq_ksrq': '', 'ssrq_jsrq': '', 'fzrq_ksrq': '', 'fzrq_jsrq': '', 'btn_id': 'service_standard_manage_search', 'cddm': 'service_standard_manage_search', 'c_s': 'pc', 'istable': '1'}
+
+
+page=1&limit=20&sign=C88F5A1B16F79EE3647240BC1CC6CAB5&source=&ly=&bzh=&zt=0&sfsl=0&czr=&czkssj=&czjssj=&kssj=&jssj=&istable=1&user_id=006aac226b8d4a8f90fd16c30998c662&user_type=09&api=gbtitle_gl&c_s=pc&random=1708504367071&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwODUwNDM1NSwiZXhwIjoxNzA4NTExNTU1fQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.iYa9btQpCrSZJHgWnV5EJUq4yekdt2BIuA-aLYJaQbbFljVWnuDoytXbERj_Z_3q1y1_GbBk_8XIy4fu-K7VXg&time_str=1708504367
+{
+	"page": "1",
+	"limit": "20",
+	"sign": "C88F5A1B16F79EE3647240BC1CC6CAB5",
+	"source": "",
+	"ly": "",
+	"bzh": "",
+	"zt": "0",
+	"sfsl": "0",
+	"czr": "",
+	"czkssj": "",
+	"czjssj": "",
+	"kssj": "",
+	"jssj": "",
+	"istable": "1",
+	"user_id": "006aac226b8d4a8f90fd16c30998c662",
+	"user_type": "09",
+	"api": "gbtitle_gl",
+	"c_s": "pc",
+	"random": "1708504367071",
+	"token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwODUwNDM1NSwiZXhwIjoxNzA4NTExNTU1fQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.iYa9btQpCrSZJHgWnV5EJUq4yekdt2BIuA-aLYJaQbbFljVWnuDoytXbERj_Z_3q1y1_GbBk_8XIy4fu-K7VXg",
+	"time_str": "1708504367"
+}
+
+国际国外标准入库：
+ch_gb_interval分支：wanghanlin-ch_gb_interval-master-0202
+yw_gb_utils分支:wanghanlin-yw_gb_utils-master-0202
+
+
+需要更新的标准数据：11948条
+正在更新0--5000条
+需要更新数据：4985条，更新时间：2024-02-22 13:48:20
+正在更新0--500条
+正在更新500--1000条
+正在更新1000--1500条
+正在更新1500--2000条
+正在更新2000--2500条
+正在更新2500--3000条
+正在更新3000--3500条
+正在更新3500--4000条
+正在更新4000--4500条
+正在更新4500--5000条
+正在更新5000--10000条
+需要更新数据：4992条，更新时间：2024-02-22 13:49:52
+正在更新0--500条
+正在更新500--1000条
+正在更新1000--1500条
+正在更新1500--2000条
+正在更新2000--2500条
+正在更新2500--3000条
+正在更新3000--3500条
+正在更新3500--4000条
+正在更新4000--4500条
+正在更新4500--5000条
+正在更新10000--15000条
+需要更新数据：1945条，更新时间：2024-02-22 13:51:04
+正在更新0--500条
+正在更新500--1000条
+正在更新1000--1500条
+正在更新1500--2000条
+
+
+2024-02-22 15:34:03
+2024-02-22 15:45:52
+2024-02-22 15:56:52
+
+TC406/SC5 74条
+TC3 266 + 60 = 326
+
+
+sign=072BC5898D02607A849CCCC5A19ECE31&source=&select=&bzbh=GA%2FT+2000.345-2023&gb_id=&issucc=1&sxh=2000.345&ndh=2023&bzmc=%E5%85%AC%E5%AE%89%E4%BF%A1%E6%81%AF%E4%BB%A3%E7%A0%81+%E7%AC%AC345%E9%83%A8%E5%88%86%3A%E6%98%93%E5%88%B6%E6%9E%AA%E7%89%A9%E5%93%81%E7%B1%BB%E5%9E%8B%E4%BB%A3%E7%A0%81&enmc=&fbrq=2023-06-08&ssrq=2023-10-01&fzrq=&syfw=&ys=&qcr=&qcdw=&wjl=&fkfj_id=&fkfj_url=&wjbh=&bzbah=&bzewm=&btn_id=service_standard_library_save&cddm=standard_library&bzid=&bzzt=%E7%8E%B0%E8%A1%8C&wxlx=&bzsx=&bzfl=&gkdw=&zbfl=A90&icsfl=35.040&bzzz=G_GB&dtbzh=&bdtbzh=&yybz=&cybz=&bcybz=&fbdw=&pzdw=&tcdw=&ssbwh=&user_id=006aac226b8d4a8f90fd16c30998c662&user_type=09&api=gbtitle_gl&c_s=pc&random=1708590016747&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwODU4OTk3MCwiZXhwIjoxNzA4NTk3MTcwfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.HSu1bZ4MmPMSjc3NyRHWVEBIot0svXS22BVaVJwxmE-OhvZZrgWJ9B6dmMMjUyrOk8TwB1VciuiHSOHzI3loVg&time_str=1708590016
+{
+	"sign": "072BC5898D02607A849CCCC5A19ECE31",
+	"source": "",
+	"select": "",
+	"bzbh": "GA/T+2000.345-2023",
+	"gb_id": "",
+	"issucc": "1",
+	"sxh": "2000.345",
+	"ndh": "2023",
+	"bzmc": "公安信息代码+第345部分:易制枪物品类型代码",
+	"enmc": "",
+	"fbrq": "2023-06-08",
+	"ssrq": "2023-10-01",
+	"fzrq": "",
+	"syfw": "",
+	"ys": "",
+	"qcr": "",
+	"qcdw": "",
+	"wjl": "",
+	"fkfj_id": "",
+	"fkfj_url": "",
+	"wjbh": "",
+	"bzbah": "",
+	"bzewm": "",
+	"btn_id": "service_standard_library_save",
+	"cddm": "standard_library",
+	"bzid": "",
+	"bzzt": "现行",
+	"wxlx": "",
+	"bzsx": "",
+	"bzfl": "",
+	"gkdw": "",
+	"zbfl": "A90",
+	"icsfl": "35.040",
+	"bzzz": "G_GB",
+	"dtbzh": "",
+	"bdtbzh": "",
+	"yybz": "",
+	"cybz": "",
+	"bcybz": "",
+	"fbdw": "",
+	"pzdw": "",
+	"tcdw": "",
+	"ssbwh": "",
+	"user_id": "006aac226b8d4a8f90fd16c30998c662",
+	"user_type": "09",
+	"api": "gbtitle_gl",
+	"c_s": "pc",
+	"random": "1708590016747",
+	"token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwODU4OTk3MCwiZXhwIjoxNzA4NTk3MTcwfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.HSu1bZ4MmPMSjc3NyRHWVEBIot0svXS22BVaVJwxmE-OhvZZrgWJ9B6dmMMjUyrOk8TwB1VciuiHSOHzI3loVg",
+	"time_str": "1708590016"
+}
+
+
+https://privatecloudprod.greatnqi.com/gbtitle_editor/bztl_download_data?sign=4BFB1299BD9C9658050A2D4C68FCBC84&user_id=e847b062761f474881a58e35f2204b0f&user_type=09&api=gbtitle_gl&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwODY1MjIxMywiZXhwIjoxNzA4NjU5NDEzfQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiJlODQ3YjA2Mjc2MWY0NzQ4ODFhNThlMzVmMjIwNGIwZiJ9.XAbiy4Acm2tE6876R8mlkmK9Dgq7JEQIkhJjtY9TuxO89oZCs-ZzKqQ32KTZ6OBrA_tW3EnCKIJLcSAw2DQ11w&page=1&limit=10&source=&bzh=&zt=0&sfsl=0&czr=&czkssj=&czjssj=&kssj=&jssj=&ids=1956530,1956529&time_str=1708652294474
+
+https://privatecloudprod.greatnqi.com/gbtitle_editor/bztl_download_data?sign=CF3F712EDF419E3F8857E1900F8F83CF&source=&ly=&bzh=&zt=0&sfsl=0&czr=&czkssj=&czjssj=&kssj=&jssj=&page=1&limit=20&user_id=006aac226b8d4a8f90fd16c30998c662&user_type=09&api=gbtitle_gl&c_s=pc&random=1708658337981&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwODY1NzU0NywiZXhwIjoxNzA4NjY0NzQ3fQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiIwMDZhYWMyMjZiOGQ0YThmOTBmZDE2YzMwOTk4YzY2MiJ9.V88VHD8x0UuEYNGLHg2qwS6hEdIvTAO1TY8Km-ZPcv58rX7Fs8rFd-N2oRWh5c0owODVlypxIU8WhyUzWCkE6w&time_str=1708658337&ids=1956530,1956529
+
+
+广州市行业标准 https://bz.gzis.org.cn/standardheightsearch
+1. 只爬行业标准吗
+2. 爬取的数据存储（原有的表还是新表）
+	1. 原有的表
+	2. 新表：表结构
+
+
+# 正式库行标数量：167587
+select count(1)
+from ch_gb.gb_data_a100
+where code_org_leibie = 'C';
+
+# 广州市行标数量：210574
+select count(1)
+from ch_spider.gb_www_bztl
+where source_type = 'gzhybz';
+
+# 相同的行标数量：139546
+select count(1)
+from ch_gb.gb_data_a100 a
+	join ch_spider.gb_www_bztl b on a.a100 = b.a100 and a.a200 = b.a200 
+where a.code_org_leibie = 'C'
+	and b.source_type = 'gzhybz';
+
+# 爬取的不在正式库中的行标数量：71028
+select count(1)
+from ch_spider.gb_www_bztl a
+	left join ch_gb.gb_data_a100 b on a.a100 = b.a100 and a.a200 = b.a200 and b.code_org_leibie = 'C'
+where b.id is null
+	and a.source_type = 'gzhybz';
+
+
+############################
+如果把广州市行业标准加入网站源题录，那么没有爬取详情的数据应该怎么办
+
+
+爬取的广州市行标数量：210574
+在标准库中的广州市行标数量：146705
+	在标准库中但标准状态不同的广州市行标数量：6410
+不在标准库中的广州市行标数量：63869
+	
+机器	 	识别码		验证码
+c2 		616008139	u4892q
+c3 		252104474	0z8kt2
+c4 		230892314	q1256
+c5 		312985409	df0hke
+
+DB 08-11-2019
+
+
+add_byyj： 新增标引依据
+get_byyj_menu：查询标引依据列表
+bzgg_get_data：查询网站源公告列表
+
+BUG解决分支：
+wanghanlin-ch_gb_spider-master-0305-BUG
+wanghanlin-ch_gbtitle_gl-master-0305-BUG
+
+
+ch_gbtitle_gl：wanghanlin-ch_gbtitle_gl-master-0308
+
+爬虫的业务包
+yw_gb_utils：wanghanlin-yw_gb_utils-master-0308
+
+
+废止企标表：dev_ch_spider.qybz_all_fz_list_page
+废止企标日期表：dev_ch_spider.gb_129_qybz_all_fz_date
+
+
+电子设备用固定电容器 第14部分:分规范 抑制电源电磁干扰用固定电容器
+GB/T 14472-1998
+厦门法拉电子股份有限公司
+2015-01-08 09:59:14
+企业自行废止
+
+
+山东省-潍坊市-寒亭区
+7.5%啶磺草胺水分散粒剂
+Q/370783SDH 010-2014
+山东德浩化学有限公司
+2015-01-08 09:09:08
+企业自行废止
+
+处理完成的阶段：国标现行，国标未生效
+正在处理的阶段：行标现行
+行标现行的文本总共：88781
+	已识别：20148
+	剩余：68633
+已识别的空白文本总数：4985
+	已处理的：3298
+	处理失败：13
+	未处理的：1674
+
+
+废止企标更新
+1. 因为全量查询响应速度太慢，所以需要一个开始时间，2015-01-05
+	全量：1276586
+	2015-01-05-至今：1276586
+2. 都长时间更新一次数据
+	1. 爬虫的间隔时间
+	2. 同步脚本的间隔时间
+
+文本替换备注：在什么时候（文件上传还是确认入库）
+文本替换历史：新建一个表，什么时候向表里插入数据（文件上传还是确认入库）
+	表里需要存什么数据，gb_id, 文件oss地址, 操作人, 备注
+
+sign=1F1BE47DDC695BE4260C77611EE716BE&source=&bzid=gb_gov_DB_85964%2C-28&bzh=DB32%2FT+3689-2019%2C%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%9B%91%E6%8E%A7%E5%8C%96%E5%AD%A6%E5%93%81%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B&file_upload_record_id=7b04ab92026e44748907cfc05be405eb%2C3f0d6aa4db1e48ed8829eaa855b0a649&comment=&zt=3&user_id=bb3661f3bcc741bb8bb78109d20520fd&user_type=09&api=gbtitle_gl&c_s=pc&random=1710397041521&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcxMDM5Njk5OSwiZXhwIjoxNzEwNDA0MTk5fQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiJiYjM2NjFmM2JjYzc0MWJiOGJiNzgxMDlkMjA1MjBmZCJ9.6Zk1uNs78fxxyjaUj_aVksbo4hNY6JFxrV9tyb_LUtleDPmiPcQd_R_Y1VTztwduqVQsoBIajxuuLd_HY_dC-Q&time_str=1710397041
+
+{
+	"sign": "1F1BE47DDC695BE4260C77611EE716BE",
+	"source": "",
+	"bzid": "gb_gov_DB_85964,-28",
+	"bzh": "DB32/T+3689-2019,中华人民共和国监控化学品管理条例",
+	"file_upload_record_id": "7b04ab92026e44748907cfc05be405eb,3f0d6aa4db1e48ed8829eaa855b0a649",
+	"comment": "",
+	"zt": "3",
+	"user_id": "bb3661f3bcc741bb8bb78109d20520fd",
+	"user_type": "09",
+	"api": "gbtitle_gl",
+	"c_s": "pc",
+	"random": "1710397041521",
+	"token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTcxMDM5Njk5OSwiZXhwIjoxNzEwNDA0MTk5fQ.eyJhcGkiOiJnYnRpdGxlX2dsIiwidXNlcl90eXBlIjoiMDkiLCJnaWQiOiJiYjM2NjFmM2JjYzc0MWJiOGJiNzgxMDlkMjA1MjBmZCJ9.6Zk1uNs78fxxyjaUj_aVksbo4hNY6JFxrV9tyb_LUtleDPmiPcQd_R_Y1VTztwduqVQsoBIajxuuLd_HY_dC-Q",
+	"time_str": "1710397041\n"
+}
+
+文本上传接口：upload_bz_text  bz
+文本上传列表查询（详情数据来源）：sel_upload_bz_text_list
+
+# 文件上传
+ch_gbtitle_gl分支：wanghanlin-ch_gbtitle_gl-master-0314
+tools_win_exe分支：wanghanlin-tools_win_exe-master-0315
+sql:
+alter table ch_gb_sys_gjjs.gb_upload_file_record
+	add bz text not null comment '备注' after wbly;
+
+# 废止企标和国家标准馆
+ch_gb_spider分支：wanghanlin-ch_gb_spider-master-0315
+ch_gb_interval分支：wanghanlin-ch_gb_intercal-master-0315
+yw_gb_utils分支（爬虫和自动脚本）：wanghanlin-yw_gb_utils-master-0315
+
+
+
+1.抓取正确起草单位信息
+	有些没有在爱企查中匹配到的企业
+2.存储更新现有企业信息表
+	1. ch_gb.gb_dict_cn_org，添加字段
+	    "企业名称": "all_name",
+        "经营状态": "business_status",
+        "法定代表人": "legal_person",
+        "注册资本": "registered_capital",
+        "实缴资本": "actual_capital",
+        "成立日期": "establishment_date",
+        "核准日期": "approved_date",
+        "营业期限": "business_term",
+        "所属省份": "province_name",
+        "所属省份": "province_code",
+        "所属城市": "city_name",
+        "所属省份": "city_code",
+        "所属区县": "county_name",
+        "所属区县": "county_code",
+        "电话": "tel",
+        "更多电话": "more_tel",
+        "邮箱": "email",
+        "更多邮箱": "more_email",
+        "统一社会信用代码": "code",
+        "纳税人识别号": "taxpayer_identification_number",
+        "工商注册号": "business_registration_number",
+        "组织机构代码": "organization_code",
+        "参保人数": "insured_number",
+        "企业类型": "company_type",
+        "所属行业": "industry",
+        "曾用名": "used_name",
+        "注册地址": "register_address",
+        "最新年报地址": "latest_annual_report_address",
+        "网址": "website",
+        "经营范围": "business_scope",
+        "匹配状态": "match_status",
+    2. 可能会出现匹配不到区域code的情况
+3.存储到对应省份-标准对应表
+	ch_gb.gb_relation_all_area:可能会出现匹配不到区域code的情况
+
+
+
+cond.orderBy=&cond.activeValue=%E5%85%A8%E9%83%A8&cond.yearStartValue=&cond.yearEndValue=&cond.publishCorpA104=&cond.chinaClassCN=&cond.aboradClassICSN=&cond.otherpublishCorpGroup=&cond.account_id=&cond.login_name=&cond.superKeyWord=&cond.superKeyWordChoose=1&cond.advanced_search=1&cond.super_A101=2023+-+2023&cond.super_standarnumber=&cond.super_w_level_s=&cond.super_w_location_s=&cond.super_tips_s=&cond.w_level_s=%2C3&cond.w_source_s=&cond.w_location_s=%2C3&cond.tips_s=%2CA12&cond.shouye_a100=&cond.resulttype=0&cond.secondword=&cond.loadPage=false&cond.interface_type=&cond.containFullTextValue=%E5%90%A6&cond.whetherSearchAll=1&page=30&limit=10&start=0
+{
+	"cond.orderBy": "",
+	"cond.activeValue": "全部",
+	"cond.yearStartValue": "",
+	"cond.yearEndValue": "",
+	"cond.publishCorpA104": "",
+	"cond.chinaClassCN": "",
+	"cond.aboradClassICSN": "",
+	"cond.otherpublishCorpGroup": "",
+	"cond.account_id": "",
+	"cond.login_name": "",
+	"cond.superKeyWord": "",
+	"cond.superKeyWordChoose": "1",
+	"cond.advanced_search": "1",
+	"cond.super_A101": "2023+-+2023",
+	"cond.super_standarnumber": "",
+	"cond.super_w_level_s": "",
+	"cond.super_w_location_s": "",
+	"cond.super_tips_s": "",
+	"cond.w_level_s": ",3",
+	"cond.w_source_s": "",
+	"cond.w_location_s": ",3",
+	"cond.tips_s": ",A12",
+	"cond.shouye_a100": "",
+	"cond.resulttype": "0",
+	"cond.secondword": "",
+	"cond.loadPage": "false",
+	"cond.interface_type": "",
+	"cond.containFullTextValue": "否",
+	"cond.whetherSearchAll": "1",
+	"page": "30",
+	"limit": "10",
+	"start": "0"
+}
+
+
+标准号：id
+标准名称:a298_c
+标准状态: active
+发布日期：fabudate
+实施日期：shishidate
+废止日期：zuofeidate
+国际标准分类：a826
+中国标准分类：a825
+归口单位：a871
+起草单位: a209
+起草人:personofdraft
+代替如下标准（对应标准无忧中的被代替标准）：a462
+被如下标准代替（对应标准无忧中的代替标准）：a461
+引用如下标准（对应无忧中的引用标准）：a502
+
+
+适用范围：fanwei
+英文名称：nameen
+
+
+cond.orderBy=&cond.activeValue=%E5%85%A8%E9%83%A8&cond.yearStartValue=&cond.yearEndValue=&cond.publishCorpA104=&cond.chinaClassCN=&cond.aboradClassICSN=&cond.otherpublishCorpGroup=&cond.account_id=&cond.login_name=&cond.superKeyWord=&cond.superKeyWordChoose=1&cond.advanced_search=1&cond.super_A101=1930+-+1930&cond.super_standarnumber=&cond.super_w_level_s=&cond.super_w_location_s=&cond.super_tips_s=&cond.w_level_s=&cond.w_source_s=&cond.w_location_s=&cond.tips_s=&cond.shouye_a100=&cond.resulttype=0&cond.secondword=&cond.loadPage=true&cond.interface_type=&cond.containFullTextValue=%E5%90%A6&cond.whetherSearchAll=1&page=1&limit=10&start=0
+
+
+wanghanlin-yw_gb_utils-master-0315
+
+
+1. 获取拆解错误的数据
+2. 获取可以拆解的数据
+
+
+# pymupdf 与 pypdf3 比较
+1. pypdf3 拆解失败的文本 pymupdf 是否可以成功拆解（34本） ？
+	报错1条。 GB-T_7631.9-2014.pdf（可以拆解前10页）
+2. pypdf3 拆解成功的文本 pymupdf 是否可以成功拆解（500本）？
+	成功
+3. pypdf3 拆解乱码的文本 pymupdf 拆解是否乱码？
+	不会乱码
+3. pypdf3 与 pymupdf 拆解的速度（500本）
+	pymupdf: 	179.61 秒
+	pypdf3: 	4356.27 秒
+	pymupdf的速度约为pypdf3的24倍
+4. pypdf3 与 pymupdf 拆解文本的乱码情况(随机抽取100页)
+	pymupdf: 无乱码
+	pypdf3: 无乱码
+结论：在拆解文本的功能上 pymupdf 优于 pypdf3
+
+
+
+不同来源同一标准号、标准名称优化处理
+1. 查询接口：bztl_request_data
+2. 导出源数据：bztl_download_data
+3. 导出清洗数据：bztl_download_data_clean
+
+
+
+2973
+735
+528

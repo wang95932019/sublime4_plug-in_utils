@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+"""
+@desc:      操作pdf文件
+@version:   1.0  
+@project:   ch_gbtitle_gl 
+@file:      test.py
+@author:    wanghl
+@date:      2024/1/5 15:20 
+"""
 # 修复EOF pdf文件
 def fix_pdf_EOF(file_path):
     file_name = os.path.basename(file_path)

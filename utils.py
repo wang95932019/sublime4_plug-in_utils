@@ -284,6 +284,7 @@ class GenerateApiStructure(sublime_plugin.TextCommand):
 		下划线转驼峰命名 
 		:param underscore_str: 字符串
 		:param is_initial_case: 首字母是否大写
+		:return:
 		"""
 
 		# 将下划线分隔的单词转换为列表
@@ -297,6 +298,40 @@ class GenerateApiStructure(sublime_plugin.TextCommand):
 			camel_str = camel_str[0].lower() + camel_str[1:] 
 
 		return camel_str
+
+
+class RowColumnConvert(sublime_plugin.TextCommand):
+	""" 行列转换（使用“,”分割） """
+
+	def run(self, edit):
+		view = self.view
+		# 遍历所有拼接为字符串
+		string:str = "".join([view.substr(region) for region in view.sel()])
+		new_string = self.row_column_convert(string)
+
+		# 输出结果
+		insert_point = view.sel()[0].end()  # 获取第一个选区的结束位置
+		view.insert(edit, insert_point, "\n")       # 先写入换行，否则如果是最后view的最后一行不会有写入
+		line_after_sel = view.line(insert_point).end() + 1  # 获取选区之后一行的位置
+		view.insert(edit, line_after_sel, new_string)
+
+
+	def row_column_convert(self, string:str) -> str:
+		"""
+		行列转换（使用“,”分割）
+		:param string: 要处理的行（列）
+		:return: 转换之后的行（列）
+		"""
+
+		# 1. 判断是行还是列
+		if string.count("\n") <= 1:
+			# 2. 行 -> 列
+			new_string = string.replace(",", ",\n")
+		else:
+			# 3. 列 -> 行
+			new_string = string.replace("\n", "")
+
+		return new_string
 
 
 class ShowPathsCommand(sublime_plugin.WindowCommand):

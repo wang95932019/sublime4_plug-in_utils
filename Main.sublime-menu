@@ -3,7 +3,13 @@
 		"id": "utils",
 		"caption": "Utils",
 		"children": [
-			{"caption": "formdata转json", "command": "form_data_to_json"},
+			{
+				"caption": "字符串处理",
+				"children":[
+					{"caption": "formdata转json", "command": "form_data_to_json"},	
+					{"caption": "行列转换", "command": "row_column_convert"}	
+				]
+			},
 			{
 				"caption": "生成随机code", 
 				"children":[
